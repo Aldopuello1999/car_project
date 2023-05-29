@@ -1,7 +1,7 @@
 <div class="row align-items-center justify-content-xl-between">
     <div class="col-xl-6">
         <div class="copyright text-center text-xl-left text-muted">
-            &copy; nch-services.com
+            &copy;cuc@edu.co
         </div>
     </div>
     <!--
@@ -25,4 +25,5 @@
         </ul>
     </div>
     -->
-</div><?php /**PATH C:\Users\andre\car_project\resources\views/layouts/footers/nav.blade.php ENDPATH**/ ?>
+</div>
+<?php /**PATH C:\Users\andre\car_project\resources\views/layouts/footers/nav.blade.php ENDPATH**/ ?>

@@ -4,6 +4,7 @@ use App\Http\Controllers\CarritoActualController;
 use App\Http\Controllers\CarritoController;
 use App\Http\Controllers\CategoriasController;
 use App\Http\Controllers\ProductosController;
+use App\Http\Controllers\UserController;
 use App\Http\Src\Cart\Controllers\CartController;
 use App\Http\Src\Checkout\Controllers\CheckoutController;
 use Illuminate\Support\Facades\Route;
@@ -18,7 +19,7 @@ use App\Http\Src\Coupons\Controllers\CouponsController;
 use App\Http\Src\Page\Controllers\PageController;
 use App\Http\Src\Shop\Controllers\ShopController;
 use App\Http\Src\Transferencia\Controllers\TransferenciasController;
-
+use App\Models\User;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,11 +44,11 @@ Route::get('/home', 'App\Http\Controllers\HomeController@index')->name('home');
 
 
 
-Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');
-Route::post('/usuarios/store', [UsuariosController::class, 'store'])->name('usuarios.store');
-Route::post('/usuarios/update', [UsuariosController::class, 'update'])->name('usuarios.update');
-Route::post('/usuarios/delete', [UsuariosController::class, 'destroy'])->name('usuarios.delete');
-Route::post('/usuarios/state', [UsuariosController::class, 'state'])->name('usuarios.state');
+// Route::get('/usuarios', [UsuariosController::class, 'index'])->name('usuarios.index');
+// Route::post('/usuarios/store', [UsuariosController::class, 'store'])->name('usuarios.store');
+// Route::post('/usuarios/update', [UsuariosController::class, 'update'])->name('usuarios.update');
+// Route::post('/usuarios/delete', [UsuariosController::class, 'destroy'])->name('usuarios.delete');
+// Route::post('/usuarios/state', [UsuariosController::class, 'state'])->name('usuarios.state');
 
 Route::get('/parametros', [ParametrosController::class, 'index'])->name('parametros.index');
 Route::get('/parametros/values', [ParametrosController::class, 'indexValues'])->name('parametros.indexValues');
@@ -143,6 +144,7 @@ Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'App\Http\
 Route::resource('categorias', CategoriasController::class);
 Route::resource('productos', ProductosController::class);
 Route::resource('carrito', CarritoController::class);
+Route::get('/usuario', [UserController::class, 'index'])->name('usuario.index');
 
 Route::get('/carrito/actual', [CarritoActualController::class, 'getActualCarrito'])->name('actualCar.get');
 Route::post('/carrito/addProduct', [CarritoActualController::class, 'addNewProduct'])->name('actualCar.addproduct');

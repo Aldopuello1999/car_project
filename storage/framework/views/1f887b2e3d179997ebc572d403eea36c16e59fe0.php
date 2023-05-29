@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <div class="row">
         <div class="col">
             <div class="card shadow">
@@ -22,19 +20,19 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($productos as $producto)
+                                <?php $__currentLoopData = $productos; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $producto): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <tr>
-                                        <td>{{ $producto->name }}</td>
-                                        <td>{{ $producto->id_categories }}</td>
-                                        <td>{{ $producto->precio }}</td>
+                                        <td><?php echo e($producto->name); ?></td>
+                                        <td><?php echo e($producto->id_categories); ?></td>
+                                        <td><?php echo e($producto->precio); ?></td>
                                         <td>
                                             <a href="javascript:;" class="btn btn-primary btn-sm"
-                                                onclick="addNewProduct('{{ $producto->id }}')">
+                                                onclick="addNewProduct('<?php echo e($producto->id); ?>')">
                                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                             </a>
                                         </td>
                                     </tr>
-                                @endforeach
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 
                             </tbody>
@@ -52,7 +50,8 @@
                                 Carrito
                             </div>
                             <div class="col-md-4" id="actionsButtons">
-                                Total: {{ $total }}
+                                Total: <?php echo e($total); ?>
+
                             </div>
                         </div>
                     </div>
@@ -68,35 +67,35 @@
                                 </tr>
                             </thead>
                             <tbody id="bodyTable">
-                                @foreach ($carrito as $item)
+                                <?php $__currentLoopData = $carrito; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $item): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                     <tr>
-                                        {{-- {{ dd($carrito) }} --}}
-                                        <td>{{ $item['producto']->name }}</td>
+                                        
+                                        <td><?php echo e($item['producto']->name); ?></td>
                                         <td>
-                                            <input id="txtCant{{ $item['id'] }}" type="numeric" class="form-control"
-                                                placeholder="{{ $item['cantidad'] }}" name="cant"
-                                                value="{{ $item['cantidad'] }}" disabled>
-                                            <button id="btnGuardar{{ $item['id'] }}" style="display: none;"
-                                                onclick="updateCantidad('{{ $item['id'] }}')">Guardar</button>
-                                            <button id="btnCancelar{{ $item['id'] }}" style="display: none;"
-                                                onclick="enableCantidad('{{ $item['id'] }}')">Cancelar</button>
+                                            <input id="txtCant<?php echo e($item['id']); ?>" type="numeric" class="form-control"
+                                                placeholder="<?php echo e($item['cantidad']); ?>" name="cant"
+                                                value="<?php echo e($item['cantidad']); ?>" disabled>
+                                            <button id="btnGuardar<?php echo e($item['id']); ?>" style="display: none;"
+                                                onclick="updateCantidad('<?php echo e($item['id']); ?>')">Guardar</button>
+                                            <button id="btnCancelar<?php echo e($item['id']); ?>" style="display: none;"
+                                                onclick="enableCantidad('<?php echo e($item['id']); ?>')">Cancelar</button>
                                         </td>
-                                        <td>{{ $item['producto']->precio }}</td>
-                                        <td>{{ $item['producto']->precio * $item['cantidad'] }}</td>
+                                        <td><?php echo e($item['producto']->precio); ?></td>
+                                        <td><?php echo e($item['producto']->precio * $item['cantidad']); ?></td>
                                         <td>
                                             <a href="javascript:;" class="btn btn-primary btn-sm"
-                                                onclick="enableCantidad('{{ $item['id'] }}')">
+                                                onclick="enableCantidad('<?php echo e($item['id']); ?>')">
                                                 <i class="fa fa-arrow-right" aria-hidden="true"></i>
                                             </a>
 
                                             <a href="javascript:;" class="btn btn-danger btn-sm"
-                                                onclick="deleteProduct('{{ $item['id'] }}')">
+                                                onclick="deleteProduct('<?php echo e($item['id']); ?>')">
                                                 <i class="fa fa-trash" aria-hidden="true"></i>
                                             </a>
 
                                         </td>
                                     <tr>
-                                @endforeach
+                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                             </tbody>
                         </table>
@@ -109,13 +108,13 @@
 
             </div>
         </div>
-    @endsection
+    <?php $__env->stopSection(); ?>
 
-    @section('js')
+    <?php $__env->startSection('js'); ?>
         <script>
             function addNewProduct(id) {
                 //Cambiar la ruta de la consulta
-                var UrlPath_ = "{{ route('actualCar.addproduct') }}";
+                var UrlPath_ = "<?php echo e(route('actualCar.addproduct')); ?>";
                 $.ajax({
                     type: 'POST',
                     url: UrlPath_,
@@ -144,7 +143,7 @@
             }
 
             function load() {
-                var UrlPath_ = "{{ route('actualCar.get') }}";
+                var UrlPath_ = "<?php echo e(route('actualCar.get')); ?>";
                 $.ajax({
                     type: 'GET',
                     url: UrlPath_,
@@ -177,7 +176,7 @@
 
             function deleteProduct(id) {
                 //Cambiar la ruta de la consulta
-                var UrlPath_ = "{{ route('actualCar.delete') }}";
+                var UrlPath_ = "<?php echo e(route('actualCar.delete')); ?>";
                 $.ajax({
                     type: 'post',
                     url: UrlPath_,
@@ -225,7 +224,7 @@
             function updateCantidad(id) {
                 var cantidad = $('#txtCant' + id).val();
 
-                var UrlPath_ = "{{ route('actualCar.updateCant') }}";
+                var UrlPath_ = "<?php echo e(route('actualCar.updateCant')); ?>";
                 $.ajax({
                     type: 'post',
                     url: UrlPath_,
@@ -253,4 +252,6 @@
                 });
             }
         </script>
-    @endsection
+    <?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\andre\car_project\resources\views/modules/carrito/index.blade.php ENDPATH**/ ?>

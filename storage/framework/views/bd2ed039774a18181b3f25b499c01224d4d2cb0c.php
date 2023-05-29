@@ -1,4 +1,4 @@
-<div class="modal fade" id="editarUsuarioModal{{ $item->id }}" tabindex="-1" role="dialog"
+<div class="modal fade" id="editarUsuarioModal<?php echo e($item->id); ?>" tabindex="-1" role="dialog"
     aria-labelledby="crearUsuarioModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
@@ -8,16 +8,16 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form method="post" action="{{ route('categorias.update', $item->id) }}">
-                @csrf
-                @method('PUT')
+            <form method="post" action="<?php echo e(route('categorias.update', $item->id)); ?>">
+                <?php echo csrf_field(); ?>
+                <?php echo method_field('PUT'); ?>
                 <div class="modal-body">
                     <div class="form-row">
 
                         <div class="form-group col-md-12">
                             <label for="apellidoUsuario" class="form-control-label">Nombre</label>
                             <input type="text" class="form-control form-control-alternative" id="nombre"
-                                placeholder="Nombre" name="nombre" value="{{ $item->nombre }}">
+                                placeholder="Nombre" name="nombre" value="<?php echo e($item->nombre); ?>">
                         </div>
 
                     </div>
@@ -29,3 +29,4 @@
         </div>
     </div>
 </div>
+<?php /**PATH C:\Users\andre\car_project\resources\views/modules/categorias/editar.blade.php ENDPATH**/ ?>

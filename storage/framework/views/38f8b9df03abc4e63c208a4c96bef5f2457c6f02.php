@@ -21,7 +21,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php echo e(route('usuarios.index')); ?>">
+                    <a class="nav-link" href="<?php echo e(route('usuario.index')); ?>">
                         <i class="ni ni-badge text-blue"></i> Usuarios
                     </a>
                 </li>
@@ -45,7 +45,7 @@
             <!-- Divider -->
             <hr class="my-3">
             <!-- Heading -->
-            <h6 class="navbar-heading text-muted">By Aldo</h6>
+            <h6 class="navbar-heading text-muted">By Aldo Puello, Ronaldo suares, Luis villa, Maroly velazque</h6>
             <!-- Navigation -->
 
         </div>
