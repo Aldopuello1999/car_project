@@ -18,15 +18,6 @@
                     <img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/AuroraESite/Attachment/2021/septiembre/LP-principal-puma-the-art-of-sport-dpstreet-230921.jpg"
                         alt="" width="100%" height="100%" fill="#777">
                     <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1 style="color: #000; font-weight: 600;">RUN FOR THE OCEANS</h1>
-                            <p style="color: #000;">It's time to take action against marine plastic pollution. Rally
-                                your
-                                <br>friends to join the movement.
-                            </p>
-                            <p><a class="btn btn-lg btn-dark" href="#" role="button"
-                                    style="margin-bottom: 160px">LEARN MORE <i class="fa fa-arrow-right"></i></a></p>
-                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -61,9 +52,6 @@
 
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>KICK UP A STORM IN SHOX</h1>
-                            <p>The subversive Nike Shox R4 is making<br>
-                                waves in clean monochrome colourways.</p>
                             <p><a class="btn btn-lg btn-light" href="#" role="button"
                                     style="margin-bottom: 130px">SHOP NOW <i class="fa fa-arrow-right"></i></a></p>
                         </div>
@@ -122,7 +110,8 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Nike</a></h2>
+                                    <i class="text-black"></i> Nike</h2>
+                                    </h2>
 
                                 </div>
                             </div>
@@ -132,7 +121,7 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Polo</a></h2>
+                                    <i class="text-black"></i> Polo</h2>
 
                                 </div>
                             </div>
@@ -142,7 +131,8 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Lacostes</a></h2>
+                                    <i class="text-black"></i> Lacoste</h2>
+                                    </h2>
 
                                 </div>
                             </div>
@@ -152,51 +142,11 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Gucci</a></h2>
+                                    <i class="text-black"></i>Gucci </h2>
 
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="col-lg-3 col-xs-6 col-sm-6">
-                                <img src="https://assets.turbologo.com/blog/es/2020/01/19132726/louis-vuitton-cover-958x575.png"
-                                    width="280" height="380" class="img_feature">
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h2 style="margin-bottom: 130px;"><a href="">Luis vuitton</a></h2>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-xs-6 col-sm-6">
-                                <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/adidas-ultraboost-light-1677321061.jpg"
-                                    width="280" height="380" class="img_feature">
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h2 style="margin-bottom: 130px;"><a href="">Adidas</a></h2>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-xs-6 col-sm-6">
-                                <img src="https://site.innovasport.com/iv/puma/2022/iv-d-landing-puma-complemento.jpeg"
-                                    width="280" height="380" class="img_feature">
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h2 style="margin-bottom: 130px;"><a href="">Puma</a></h2>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-xs-6 col-sm-6">
-                                <img src="https://media.revistagq.com/photos/5ebd548b9be70fabcbacd542/16:9/pass/reebokclubc.jpg"
-                                    width="280" height="380" class="img_feature">
-                                <div class="container">
-                                    <div class="carousel-caption">
-                                        <h2 style="margin-bottom: 130px;"><a href="">Reebok</a></h2>
-
-                                    </div>
-                                </div>
-                            </div> --}}
 
                     </div>
                 </div>
@@ -212,7 +162,7 @@
                     width="700px" height="500px" style="margin-left: 50px">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>MAXIMUM VERSATILITY</h2>
+                        <i class="text-black"></i>MAXIMUM</h2>
                         <p>Three support levels, for any activity in and around the water.</p>
                         <p><a class="btn btn-lg btn-dark" href="#" role="button">SHOP NOW <i
                                     class="fa fa-arrow-right"></i></a></p>
@@ -224,7 +174,7 @@
                     width="700px" height="500px">
                 <div class="container">
                     <div class="carousel-caption"">
-                        <h2>WORK IT OUTSIDE</h2>
+                        <i class="text-black"></i> WORK IT OUTSIDE</h2>
                         <p>Get inspired to bootcamp equipment-free in high support tights.</p>
 
                         <p><a class="btn btn-lg btn-dark" href="#" role="button">PREVIEW NOW <i
@@ -233,24 +183,6 @@
                 </div>
             </div>
         </div>
-
-
-        {{-- <br><br> --}}
-        {{-- ======================= end of addias 2 ==================== --}}
-
-
-        {{-- ======================= start of caro ==================== --}}
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-
-            </div>
-
-        </div>
-        {{-- <br><br> --}}
-        {{-- ======================= end of caro ==================== --}}
-
-
         {{-- ======================= start of caro2 ==================== --}}
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -259,23 +191,6 @@
             </div>
 
         </div>
-        {{-- <br><br> --}}
-        {{-- ======================= end of caro2 ==================== --}}
-
-
-
-
-        {{-- @include('best-seller');
-            <div class="container">
-                home page
-                <ul>
-                    @foreach ($products as $product)
-                        <li><a href="">{{ $product->name }}<br>
-                                ${{ $product->price }}</a></li>
-                    @endforeach
-                </ul> --}}
-
-
     </div>{{--  container end --}}
 
     <hr class="featurette-divider">
@@ -293,15 +208,6 @@
                             class="fa fa-arrow-right"></i></a></p>
             </div>
         </div>
-        {{-- <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-                        height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice"
-                        focusable="false" role="img" aria-label="Placeholder: 500x500">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%"
-                            fill="#aaa" dy=".3em">500x500</text>
-                    </svg>
-                </div> --}}
     </div>
 
     <br><br>
@@ -310,56 +216,6 @@
 
     </div>
     </div>
-    {{-- <div class="caro3_3">
-            <div class="row">
-                <div class="col-lg-4 mb-3">
-                    <div class="caro3">
-                        <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/ebni4cssccl4rvr0fgeb/homepage-apla-xa.jpg"
-                            class="caro3_img">
-                        <div class="container">
-                            <div class="carousel-caption">
-
-                                <p><a class="btn btn-lg btn-light" href="#" role="button"
-                                        style="border-radius: 20px; margin-right: 40px; margin-bottom: 25px;">Men's </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="caro3">
-                        <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/xkh1zz53gxufllifu6yd/homepage-apla-xa.jpg"
-                            class="caro3_img">
-                        <div class="container">
-                            <div class="carousel-caption">
-
-                                <p><a class="btn btn-lg btn-light" href="#" role="button"
-                                        style="border-radius: 20px; margin-right: 40px; margin-bottom: 25px;">Women's </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mb-3">
-                    <div class="caro3">
-                        <img src="https://c.static-nike.com/a/images/f_auto/w_1536,c_limit/rl9h6expvyvrv6gwbzr2/homepage-apla-xa.jpg"
-                            class="caro3_img">
-                        <div class="container">
-                            <div class="carousel-caption">
-
-                                <p><a class="btn btn-lg btn-light" href="#" role="button"
-                                        style="border-radius: 20px; margin-right: 40px; margin-bottom: 25px;">Kids' </a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div> --}}
-
     @include('layouts.footers.auth')
     </div>
 @endsection

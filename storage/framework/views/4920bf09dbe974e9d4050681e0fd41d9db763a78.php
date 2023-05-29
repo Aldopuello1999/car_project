@@ -16,15 +16,6 @@
                     <img src="https://dpjye2wk9gi5z.cloudfront.net/wcsstore/AuroraESite/Attachment/2021/septiembre/LP-principal-puma-the-art-of-sport-dpstreet-230921.jpg"
                         alt="" width="100%" height="100%" fill="#777">
                     <div class="container">
-                        <div class="carousel-caption text-left">
-                            <h1 style="color: #000; font-weight: 600;">RUN FOR THE OCEANS</h1>
-                            <p style="color: #000;">It's time to take action against marine plastic pollution. Rally
-                                your
-                                <br>friends to join the movement.
-                            </p>
-                            <p><a class="btn btn-lg btn-dark" href="#" role="button"
-                                    style="margin-bottom: 160px">LEARN MORE <i class="fa fa-arrow-right"></i></a></p>
-                        </div>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -59,9 +50,6 @@
 
                     <div class="container">
                         <div class="carousel-caption text-left">
-                            <h1>KICK UP A STORM IN SHOX</h1>
-                            <p>The subversive Nike Shox R4 is making<br>
-                                waves in clean monochrome colourways.</p>
                             <p><a class="btn btn-lg btn-light" href="#" role="button"
                                     style="margin-bottom: 130px">SHOP NOW <i class="fa fa-arrow-right"></i></a></p>
                         </div>
@@ -120,7 +108,8 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Nike</a></h2>
+                                    <i class="text-black"></i> Nike</h2>
+                                    </h2>
 
                                 </div>
                             </div>
@@ -130,7 +119,7 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Polo</a></h2>
+                                    <i class="text-black"></i> Polo</h2>
 
                                 </div>
                             </div>
@@ -140,7 +129,8 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Lacostes</a></h2>
+                                    <i class="text-black"></i> Lacoste</h2>
+                                    </h2>
 
                                 </div>
                             </div>
@@ -150,12 +140,11 @@
                                 width="280" height="380" class="img_feature">
                             <div class="container">
                                 <div class="carousel-caption">
-                                    <h2 style="margin-bottom: 130px;"><a href="">Gucci</a></h2>
+                                    <i class="text-black"></i>Gucci </h2>
 
                                 </div>
                             </div>
                         </div>
-                        
 
                     </div>
                 </div>
@@ -171,7 +160,7 @@
                     width="700px" height="500px" style="margin-left: 50px">
                 <div class="container">
                     <div class="carousel-caption">
-                        <h2>MAXIMUM VERSATILITY</h2>
+                        <i class="text-black"></i>MAXIMUM</h2>
                         <p>Three support levels, for any activity in and around the water.</p>
                         <p><a class="btn btn-lg btn-dark" href="#" role="button">SHOP NOW <i
                                     class="fa fa-arrow-right"></i></a></p>
@@ -183,7 +172,7 @@
                     width="700px" height="500px">
                 <div class="container">
                     <div class="carousel-caption"">
-                        <h2>WORK IT OUTSIDE</h2>
+                        <i class="text-black"></i> WORK IT OUTSIDE</h2>
                         <p>Get inspired to bootcamp equipment-free in high support tights.</p>
 
                         <p><a class="btn btn-lg btn-dark" href="#" role="button">PREVIEW NOW <i
@@ -192,12 +181,6 @@
                 </div>
             </div>
         </div>
-
-
-        
-        
-
-
         
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -206,27 +189,6 @@
             </div>
 
         </div>
-        
-        
-
-
-        
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-
-
-            </div>
-
-        </div>
-        
-        
-
-
-
-
-        
-
-
     </div>
 
     <hr class="featurette-divider">
@@ -244,7 +206,6 @@
                             class="fa fa-arrow-right"></i></a></p>
             </div>
         </div>
-        
     </div>
 
     <br><br>
@@ -253,8 +214,6 @@
 
     </div>
     </div>
-    
-
     <?php echo $__env->make('layouts.footers.auth', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
     </div>
 <?php $__env->stopSection(); ?>
