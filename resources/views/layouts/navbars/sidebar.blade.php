@@ -37,7 +37,7 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="{{ route('carrito.index') }}">
-                        <i class="ni ni-cart text-black"></i> Carrito
+                        <i class="ni ni-cart text-blue"></i> Carrito
                     </a>
                 </li>
 
